@@ -1,0 +1,9 @@
+<%= link_to "추가", new_video_path %> 
+
+<ul>
+  <% @videos.each do |video| %>
+  <li>
+    <%= link_to video.title, video_path(video) %> - <%= video.content %>
+  </li>
+  <% end %>
+</ul>

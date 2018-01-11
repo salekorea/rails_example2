@@ -1,0 +1,7 @@
+<h3><%= @video.title %></h3>
+
+<h5>내용</h5>
+<p><%= @video.content %></p>
+
+<%= link_to "수정",edit_video_path(@video) %>|
+<%= link_to "삭제",video_path(@video), method: :delete %>

@@ -1,0 +1,11 @@
+<%= form_for(@video) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+ <hr>
+  <%= f.label :content %>
+  <%= f.text_area :content %>
+
+  <hr>
+  <%= f.submit %>
+<% end %>
